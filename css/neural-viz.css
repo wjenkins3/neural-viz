@@ -25,6 +25,10 @@ textarea {
   visibility: visible;
 }
 
+.modal-header, h5, .close {
+  background: #f5f5f5;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -77,4 +81,35 @@ input:checked + .slider:before {
   -webkit-transform: translateX(9px);
   -ms-transform: translateX(9px);
   transform: translateX(9px);
+}
+
+#viz-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-container.neural-net {
+  padding-bottom: 60%;
+}
+
+.svg-container.heatmap {
+  padding-bottom: 70%;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
